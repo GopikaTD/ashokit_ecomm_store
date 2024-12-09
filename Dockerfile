@@ -13,5 +13,6 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 COPY --from=build /app/dist/ecommerce_frontend /usr/share/nginx/html
-
-EXPOSE 80
+COPY nginx.conf /etc/nginx/nginx.conf
+ 
+EXPOSE 80 
