@@ -16,7 +16,7 @@ spec:
   spec:
     containers:
     - name: ecommstorecontainer
-      image: ashokit/ecomm_store
+      image: gopika18021996/frontendapp
       ports:
       - containerPort: 80
 ---
